@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pica pollo Dorvil</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!--Página Principal -->
+    <header>
+        <h1>Pica Pollo Mario</h1>
+    </header>
+    <nav>
+        <ul>
+        <li><a href="restaurante.html">Inicio</a></li>
+        <li><a href="Menu.html">Menú</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+    </nav>
+   
+
+    
+
+    <!--Página de Ordenar-->
+    <section  class="section">
+        <h2>Ordenar</h2>
+        <form action="mailto:picapollomario@gmail.com" method="post" enctype="text/plain">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required><br><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required><br><br>
+            <label>Información del pedido:</label><br>
+            <input type="radio" id="delivery" name="pedido" value="Delivery" required>
+            <label for="delivery">Delivery</label><br>
+            <input type="radio" id="recoger" name="pedido" value="Recoger">
+            <label for="recoger">Recoger</label><br><br>
+            <label>Seleccione los artículos:</label><br>
+            <input type="checkbox" id="empanadas" name="articulo" value="Empanadas">
+            <label for="empanadas">Empanadas</label><br>
+            <input type="checkbox" id="ensalada" name="articulo" value="Ensalada Verde">
+            <label for="ensalada">Ensalada Verde</label><br>
+            <input type="checkbox" id="picapollo" name="articulo" value="Pica Pollo">
+            <label for="picapollo">Pica Pollo</label><br>
+            <input type="checkbox" id="chicharron" name="articulo" value="Chicharrón">
+            <label for="chicharron">Chicharrón</label><br>
+            <input type="checkbox" id="flan" name="articulo" value="Flan">
+            <label for="flan">Flan</label><br>
+            <input type="checkbox" id="jugo" name="articulo" value="Jugo Natural">
+            <label for="jugo">Jugo Natural</label><br><br>
+            <label for="observaciones">Pedidos adicionales:</label><br>
+            <textarea id="observaciones" name="observaciones" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Enviar Pedido">
+       
+        </form>
+
+        <section>
+            <h2>Contacto:</h2>
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Informacion personal</legend>
+                    <label for="name">Nombre:<input type="text" id="name" name="name" 
+                    placeholder="Tu nombre aqui" required></label>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Informacion adicional</legend>
+                    <label for="email">Correo:<input type="email" id="name" name="email" 
+                    placeholder="Tu correo aqui" required></label>
+        <div>
+                    <label for="tel">Telefono:<input type="tel" name="phone" 
+                    placeholder="Telefono" required co de ></label>
+                    </div>
+                
+                </fieldset>
+              
+                <fieldset>
+                    <label for="terms">Esta seguro de que todo esta correcto?</label>
+                    <input type="checkbox" id="temrs" name="terms" required>
+                </fieldset>
+                
+                <input type="submit" value="Enviar contacto">
+               
+            </form>
+    </section>
+
+    <!--Pie de página-->
+    <footer>
+        <p>Teléfonos: 809-234-1656 | Dirección: Calle A11 esq.moises, Santo Domingo Este</p>
+    </footer>
+</body>
+</html>
